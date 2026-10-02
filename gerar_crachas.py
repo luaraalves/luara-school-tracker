@@ -14,7 +14,7 @@ def gerar_crachas():
   try:
     with open(ARQUIVO_JSON, 'r', encoding= 'utf-8') as f:
       alunos = json.load(f)
-      escept FileNoteFoundError:
+      except FileNoteFoundError:
       print("Erro: Arquivo alunos.json não encontrado!")
       return
 
